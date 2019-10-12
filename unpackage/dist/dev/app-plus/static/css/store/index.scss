@@ -1,0 +1,29 @@
+@import './border.scss';
+@import './button.scss';
+@import './input.scss';
+@import './margin.scss';
+@import './position.scss';
+@import './padding.scss';
+@import './text.scss';
+@import './flex.scss';
+@import './layout.scss';
+
+.vi-background{
+	background-color: $uni-bg-color;
+}
+
+.vi-background.is-background--primary{
+	background-color: $uni-color-primary;
+}
+.vi-background.is-background--error{
+	background-color: $uni-color-error;
+}
+.vi-background.is-background--success{
+	background-color: $uni-color-success;
+}
+.vi-background.is-background--warning{
+	background-color: $uni-color-warning;
+}
+.vi-background.is-background--disabled{
+	background-color: $uni-text-color-disable
+}

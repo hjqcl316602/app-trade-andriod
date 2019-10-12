@@ -1,0 +1,2 @@
+setCssToHead(["@charset \x22UTF-8\x22;\n.",[1],"app-head-wrapper { border: 2px solid #fff; background: #fff; border-radius: 100%; overflow: hidden; }\n.",[1],"app-head { height: 60px; width: 60px; display: block; }\n",])();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/user.wxml') } }));

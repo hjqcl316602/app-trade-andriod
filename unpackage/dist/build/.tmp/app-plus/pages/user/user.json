@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "我的",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "",
+        "fontSize": "16",
+        "float": "right",
+        "color": "#FFFFFF",
+        "fontSrc": "/static/icon-font/iconfont.ttf"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

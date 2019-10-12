@@ -1,0 +1,91 @@
+ 
+/**
+* 文本的字体大小
+*/
+.vi-font-size--none {
+  font-size: 0;
+}
+ 
+.vi-font-size--small {
+  font-size: $uni-font-size-sm;
+}
+
+.vi-font-size--medium {
+  font-size: $uni-font-size-base;
+}
+
+.vi-font-size--large {
+  font-size: $uni-font-size-lg;
+}
+
+// 颜色
+.vi-color--primary {
+  color: $uni-color-primary;
+}
+
+.vi-color--warning {
+  color: $uni-color-warning;
+}
+
+.vi-color--error {
+  color: $uni-color-error;
+}
+
+.vi-color--success {
+  color: $uni-color-success;
+}
+
+.vi-color--dark {
+  color: $uni-color-dark;
+}
+
+.vi-color--light {
+  color: $uni-color-light;
+}
+
+.vi-color--gray {
+  color: $uni-color-gray;
+}
+
+.vi-color--black {
+  color: $uni-color-black;
+}
+
+.vi-color--white {
+  color: $uni-color-white;
+} 
+
+//倾斜
+.vi-font-style--italic {
+  font-style: italic;
+}
+
+// 加粗
+.vi-font-weight--bold {
+  font-weight: bold;
+}
+// 居中对齐
+.vi-text-align--right {
+  text-align: right;
+}
+.vi-text-align--left {
+  text-align: left;
+}
+.vi-text-align--center {
+  text-align: center;
+}
+
+//文本截断
+.vi-text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vi-text-clamp {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-emphasis: none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"app-default","entryPagePath":"pages/user/user.html","page":{"pages/user/user.html":{"window":{"navigationBarTitleText":"我的","titleNView":{"buttons":[{"text":"","fontSize":"16","float":"right","color":"#FFFFFF","fontSrc":"/static/icon-font/iconfont.ttf"}]},"usingComponents":{}}},"pages/buy/buy.html":{"window":{"navigationBarTitleText":"购买广告","usingComponents":{}}},"pages/sell/sell.html":{"window":{"navigationBarTitleText":"出售广告","usingComponents":{}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"登录","animationType":"pop-in","usingComponents":{}}},"pages/set/set.html":{"window":{"navigationBarTitleText":"设置","animationType":"pop-in","animationDuration":300,"usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"white","navigationBarTitleText":"TTM数字资产交易平台","navigationBarBackgroundColor":"#3399FF"}},"tabBar":{"color":"#333333","selectedColor":"#3399FF","backgroundColor":"#ffffff","borderStyle":"black","list":[{"pagePath":"pages/buy/buy.html","iconPath":"static/icon/icon-buy-normal.png","selectedIconPath":"static/icon/icon-buy-active.png","text":"购买"},{"pagePath":"pages/sell/sell.html","iconPath":"static/icon/icon-sell-normal.png","selectedIconPath":"static/icon/icon-sell-active.png","text":"出售"},{"pagePath":"pages/user/user.html","iconPath":"static/icon/icon-user-normal.png","selectedIconPath":"static/icon/icon-user-active.png","text":"我的"}],"position":"top","height":"50px","fontSize":"10px","iconWidth":"18px"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/user/user","pages/buy/buy","pages/sell/sell","pages/login/login","pages/set/set"],"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":false,"autoclose":true},"compilerVersion":"2.3.3","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

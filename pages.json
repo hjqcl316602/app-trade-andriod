@@ -1,0 +1,100 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+					"titleNView":{
+						"buttons":[{
+							"text": "\ue675",
+							"fontSize": "16",
+							"float": "right",
+							"color": "#FFFFFF",
+							"fontSrc":"/static/icon-font/iconfont.ttf"
+
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/buy/buy",
+			"style": {
+				"navigationBarTitleText": "购买广告"  
+			}
+		}
+	    ,{
+            "path" : "pages/sell/sell",
+            "style" : {
+				"navigationBarTitleText": "出售广告"  
+			}
+        } ,
+		{
+		    "path" : "pages/login/login",
+		    "style" : {
+				"navigationBarTitleText": "登录" ,
+				"app-plus":{
+					"animationType":"pop-in"
+				} 
+			}
+		} 
+        ,{
+            "path" : "pages/set/set",
+            "style" : {
+				"navigationBarTitleText": "设置" ,
+				"app-plus":{
+					"animationType":"pop-in",
+					"animationDuration": 300
+				} 
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "TTM数字资产交易平台",
+		"navigationBarBackgroundColor": "#3399FF"
+	},
+	"tabBar": {
+	        "color": "#333333",
+	        "selectedColor": "#3399FF",
+	        "borderStyle": "black",
+	        "backgroundColor": "#ffffff",
+	        "height": "50px",
+			"position":"top",// 仅小程序可用
+	        "fontSize": "10px",
+	        "iconWidth": "18px",
+	        "list": [{
+	            "pagePath": "pages/buy/buy",
+	            "iconPath": "static/icon/icon-buy-normal.png",
+	            "selectedIconPath": "static/icon/icon-buy-active.png",
+	            "text": "购买"
+	        }, {
+	            "pagePath": "pages/sell/sell",
+	            "iconPath": "static/icon/icon-sell-normal.png",
+	            "selectedIconPath": "static/icon/icon-sell-active.png",
+	            "text": "出售"
+	        },
+			{
+			    "pagePath": "pages/user/user",
+			    "iconPath": "static/icon/icon-user-normal.png",
+			    "selectedIconPath": "static/icon/icon-user-active.png",
+			    "text": "我的"
+			}]
+	         
+	    },
+		"condition":{
+			"current":2,
+			"list": [{
+			    "path": "pages/buy/buy",
+			    "name": "购买"
+			}, {
+			    "path": "pages/sell/sell",
+			    "name": "出售"
+			},
+			{
+			    "path": "pages/user/user",
+			    "name": "我的"
+			}]
+		}
+}
