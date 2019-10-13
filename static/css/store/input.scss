@@ -83,12 +83,12 @@ $input-size-larger: 44px;
 * input 必填
 */
 .vi-input.is-input--require {
-  padding-left: 10px;
+  padding-left: 8px;
 }
 .vi-input.is-input--require:before {
   content: "*";
   position: absolute;
-  left: 8px;
+  left:0;
   top: 50%;
   transform: translateY(-50%);
   color: $uni-color-error;

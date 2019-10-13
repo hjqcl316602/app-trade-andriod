@@ -5,12 +5,12 @@
     "iPad"
   ],
   "id": "__UNI__D0E99A1",
-  "name": "app-default",
+  "name": "app-trade-andriod",
   "version": {
     "name": "1.0.0",
     "code": "100"
   },
-  "description": "",
+  "description": "数字资产",
   "launch_path": "__uniapptabbar.html",
   "developer": {
     "name": "",
@@ -77,7 +77,7 @@
         }
       }
     },
-    "arguments": "{\"name\":\"我的\",\"id\":2,\"pathName\":\"pages/user/user\"}",
+    "arguments": "{\"name\":\"我的\",\"id\":0,\"pathName\":\"pages/user/user\"}",
     "allowsInlineMediaPlayback": true,
     "safearea": {
       "background": "#ffffff",
